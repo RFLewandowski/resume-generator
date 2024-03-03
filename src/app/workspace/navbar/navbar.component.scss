@@ -1,0 +1,11 @@
+.container-fluid {
+  position: relative;
+}
+
+.red-square {
+  margin: 60px auto;
+  width: 210mm;
+  height: 297mm;
+  background-color: #ff0000; /* Red color */
+  z-index: -1;
+}
