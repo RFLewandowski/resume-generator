@@ -9,3 +9,6 @@ Kliknąć w [link](https://RFLewandowski.github.io/resume-generator) i wypełni�
 
 ### Jak do odpalić lokalnie?
 Wszystko jest opisane w [README-angular.md](README-angular.md)
+
+### FAQ:
+Nie mam nic do dodania XD
