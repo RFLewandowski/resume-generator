@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import {NavbarComponent} from "./navbar/navbar.component";
+import {MenuComponent} from "./navbar/menu.component";
 import {SheetComponent} from "./sheet/sheet.component";
 
 @Component({
   selector: 'app-workspace',
   standalone: true,
   imports: [
-    NavbarComponent,
+    MenuComponent,
     SheetComponent
   ],
   templateUrl: './workspace.component.html',

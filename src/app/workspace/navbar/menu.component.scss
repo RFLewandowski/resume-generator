@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+  //display: flex;
+  justify-self: flex-start;
+}
+
+.sheet-control-container {
+  flex: 1;
+  //display: flex;
+  justify-self: center;
+}
+
+.left-menu {
+  flex: 1;
+  //display: flex;
+  justify-self: flex-end;
+}
