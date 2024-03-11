@@ -1,22 +1,26 @@
-.menu {
+#menu {
   display: flex;
   align-items: center;
-}
 
-.logo-container {
-  flex: 1;
-  //display: flex;
-  justify-self: flex-start;
-}
+  .container {
+    flex: 1;
+    display: flex;
+  }
 
-.sheet-control-container {
-  flex: 1;
-  //display: flex;
-  justify-self: center;
-}
+  .logo-container {
+    @extend .container;
+    justify-content: flex-start;
+    padding-left: 0.6rem;
+  }
 
-.left-menu {
-  flex: 1;
-  //display: flex;
-  justify-self: flex-end;
+  .sheet-control-container {
+    @extend .container;
+    justify-content: center;
+  }
+
+  .left-menu-container {
+    @extend .container;
+    justify-content: flex-end;
+    padding-right: 0.6rem;
+  }
 }
