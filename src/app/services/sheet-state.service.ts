@@ -11,7 +11,7 @@ export class SheetStateService {
 
 }
 
-enum Layout { // TODO - move to external file and pass fron service to component
+enum Layout { // TODO - move to external file and pass from service to component
   Split = "SPLIT_LAYOUT",
   Classic = "CLASSIC_LAYOUT",
   Hybrid = "HYBRID_LAYOUT"
