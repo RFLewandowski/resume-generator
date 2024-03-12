@@ -12,4 +12,7 @@ import {SectionsComponent} from "./sections/sections.component";
 })
 export class SheetControlsComponent {
 
+  lol() {
+    console.log("Click!")
+  }
 }

@@ -6,4 +6,13 @@ import { Injectable } from '@angular/core';
 export class SheetStateService {
 
   constructor() { }
+
+
+
+}
+
+enum Layout { // TODO - move to external file and pass fron service to component
+  Split = "SPLIT_LAYOUT",
+  Classic = "CLASSIC_LAYOUT",
+  Hybrid = "HYBRID_LAYOUT"
 }
