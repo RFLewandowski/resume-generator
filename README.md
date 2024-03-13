@@ -12,6 +12,3 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Nie mam nic do dodania XD
-Nadal nie mam nic dodania
-Bez zmian :)
-Znowu nic się nie zmieniło :D
