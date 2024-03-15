@@ -1,13 +1,20 @@
 <div id="sheet-controls">
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>
+            <i class="bi bi-layout-text-window-reverse"></i>
+          </span>
       Layout
     </button>
     <ul class="dropdown-menu">
-<!--      TODO add layout model here? I think not |   below example how to click, but better would be angular form - this more complex one  -->
-      <li><a class="dropdown-item" (click)="lol()" >Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li *ngFor="let layout of layouts">
+        <a class="dropdown-item" (click)="setLayout(layout)">
+          <span>
+            <i class="bi bi-{{ LayoutIcons[layout] }}"></i>
+          </span>
+          {{ layout }}
+        </a>
+      </li>
     </ul>
   </div>
 

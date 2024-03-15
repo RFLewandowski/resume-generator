@@ -1,18 +1,15 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {Layout} from "../workspace/navbar/sheet-controls/model/layout";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SheetStateService {
 
-  constructor() { }
+  layout: Layout = Layout.Split;
 
-
-
-}
-
-enum Layout { // TODO - move to external file and pass from service to component
-  Split = "SPLIT_LAYOUT",
-  Classic = "CLASSIC_LAYOUT",
-  Hybrid = "HYBRID_LAYOUT"
+  setLayout(layout: Layout): void {
+    this.layout = layout;
+    console.log(`new layout = ${this.layout}`)
+  }
 }
