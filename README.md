@@ -12,3 +12,4 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Nie mam nic do dodania XD
+Nadal nic do dodania :D
