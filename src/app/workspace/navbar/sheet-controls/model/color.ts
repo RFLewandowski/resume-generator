@@ -1,3 +1,12 @@
+export enum Color {
+  AzureBlue = "#0082e6",
+  DarkFuchsia = "#b92a78",
+  PumpkinOrange = "#f3840b",
+  MintGreen = "#2ab993",
+  Black = "#000000"
+}
+
+
 /* co wyświetlać
 <div>
     <div class="color-button color-button-selected" data-color="#0082e6" style="background-color: #0082e6;"></div>

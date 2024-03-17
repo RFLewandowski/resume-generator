@@ -1,32 +1,22 @@
 import {Component} from '@angular/core';
-import {SectionsComponent} from "./sections/sections.component";
-import {SheetStateService} from "../../../services/sheet-state.service";
-import {Layout, LayoutIcons} from "./model/layout";
-import {NgForOf} from "@angular/common";
+import {LayoutControlComponent} from "./layout-control/layout-control.component";
+import {SectionsControlComponent} from "./sections-control/sections-control.component";
+import {ColorControlComponent} from "./color-control/color-control.component";
+import {TypographyControlComponent} from "./typography-control/typography-control.component";
 
 @Component({
   selector: 'app-sheet-controls',
   standalone: true,
   imports: [
-    SectionsComponent,
-    NgForOf
+    LayoutControlComponent,
+    SectionsControlComponent,
+    ColorControlComponent,
+    TypographyControlComponent
   ],
   templateUrl: './sheet-controls.component.html',
   styleUrl: './sheet-controls.component.scss'
 })
 export class SheetControlsComponent {
 
-  protected readonly LayoutIcons = LayoutIcons;
 
-  get layouts(): Layout[] {
-    return Object.values(Layout);
-  }
-
-
-  constructor(private sheetStateService: SheetStateService) {
-  }
-
-  setLayout(layout: Layout): void {
-    this.sheetStateService.setLayout(layout);
-  }
 }
