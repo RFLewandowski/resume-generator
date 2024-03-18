@@ -1,4 +1,4 @@
-export enum Color {
+export enum Color { // RENAMEME to DefaultColors
   AzureBlue = "#0082e6",
   DarkFuchsia = "#b92a78",
   PumpkinOrange = "#f3840b",

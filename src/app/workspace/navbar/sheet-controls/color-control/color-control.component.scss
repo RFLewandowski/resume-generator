@@ -5,14 +5,14 @@ i {
 
 @import 'bootstrap/scss/bootstrap';
 .dropdown-menu {
-  --bs-dropdown-min-width: none; // Set the new value
+  --bs-dropdown-min-width: none; // override BS to width of only color pickers
 }
 
 .color-circle {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  display: flex;
+  display: flex; // TODO check if it really does something :D
   align-items: center;
   justify-content: center;
 }

@@ -17,7 +17,8 @@ import {FormsModule} from "@angular/forms";
 export class ColorControlComponent {
   protected readonly ShadeOfGray = ShadeOfGray;
 
-  pickedColor: any; // required?
+  pickedColor: any; // FIXME to działa ale jest bez sensu, bo z pickera nie ma konkretnej wartości z listy -
+  // więc nie można sprawdzić tak prosto czy coś jest kolorem z enuma - bo może nie być z enuma
 
   get colors(): Color[] {
     return Object.values(Color);
