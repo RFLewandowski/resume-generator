@@ -1,10 +1,26 @@
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>
+            <i class="bi bi-palette"></i>
+          </span>
     Color
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+      <div *ngFor="let color of colors">
+        <a class="dropdown-item" (click)="setColor(color)">
+          <div class="color-circle" [style.background-color]="color"></div>
+        </a>
+      </div>
+
+      <div class="dropdown-item color-picker-container">
+        <label for="colorPicker" class="color-circle" [style.background-color]="'#adb5bd'">
+          <!--FIXME center me-->
+          <i class="bi bi-eyedropper"></i>
+          <input id="colorPicker" type="color" [(ngModel)]="pickedColor" (change)="setColor(pickedColor)" style="position: absolute; opacity: 0;">
+        </label>
+      </div>
+    </li>
   </ul>
+
 </div>

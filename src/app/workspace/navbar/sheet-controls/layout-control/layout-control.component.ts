@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Layout, LayoutIcons} from "../model/layout";
+import {Layout, LayoutIcons} from "./layout";
 import {SheetStateService} from "../../../../services/sheet-state.service";
 import {NgForOf} from "@angular/common";
 

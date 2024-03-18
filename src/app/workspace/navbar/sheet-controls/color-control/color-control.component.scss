@@ -1,0 +1,22 @@
+i {
+  padding-right: 7px; // FIXME - it could be better with flex
+}
+
+
+@import 'bootstrap/scss/bootstrap';
+.dropdown-menu {
+  --bs-dropdown-min-width: none; // Set the new value
+}
+
+.color-circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-picker-container .color-circle i {
+  color: white;
+}

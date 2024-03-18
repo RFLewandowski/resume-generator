@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
-import {Layout} from "../workspace/navbar/sheet-controls/model/layout";
+import {Layout} from "../workspace/navbar/sheet-controls/layout-control/layout";
+import {Color} from "../workspace/navbar/sheet-controls/color-control/color";
 
 @Injectable({
   providedIn: 'root'
@@ -7,9 +8,15 @@ import {Layout} from "../workspace/navbar/sheet-controls/model/layout";
 export class SheetStateService {
 
   layout: Layout = Layout.Split;
+  color: Color = Color.AzureBlue;
 
   setLayout(layout: Layout): void {
     this.layout = layout;
     console.log(`new layout = ${this.layout}`)
+  }
+
+  setColor(color: Color) {
+    this.color = color;
+    console.log(`new color = ${this.color}`)
   }
 }
