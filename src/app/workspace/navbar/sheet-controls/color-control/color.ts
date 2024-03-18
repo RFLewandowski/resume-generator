@@ -5,6 +5,7 @@ export enum Color {
   MintGreen = "#2ab993",
   Black = "#000000"
 }
+export const ShadeOfGray:string = "#adb5bd"
 
 
 /* co wyświetlać

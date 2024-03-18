@@ -1,8 +1,7 @@
 import {Component} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {Layout} from "../layout-control/layout";
 import {SheetStateService} from "../../../../services/sheet-state.service";
-import {Color} from "./color";
+import {Color, ShadeOfGray} from "./color";
 import {FormsModule} from "@angular/forms";
 
 @Component({
@@ -16,7 +15,8 @@ import {FormsModule} from "@angular/forms";
   styleUrl: './color-control.component.scss'
 })
 export class ColorControlComponent {
-  // protected readonly LayoutIcons = LayoutIcons;
+  protected readonly ShadeOfGray = ShadeOfGray;
+
   pickedColor: any; // required?
 
   get colors(): Color[] {

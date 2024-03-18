@@ -14,7 +14,7 @@
       </div>
 
       <div class="dropdown-item color-picker-container">
-        <label for="colorPicker" class="color-circle" [style.background-color]="'#adb5bd'">
+        <label for="colorPicker" class="color-circle" [style.background-color]="ShadeOfGray">
           <!--FIXME center me-->
           <i class="bi bi-eyedropper"></i>
           <input id="colorPicker" type="color" [(ngModel)]="pickedColor" (change)="setColor(pickedColor)" style="position: absolute; opacity: 0;">
