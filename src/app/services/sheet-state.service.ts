@@ -8,14 +8,14 @@ import {Color} from "../workspace/navbar/sheet-controls/color-control/color";
 export class SheetStateService {
 
   layout: Layout = Layout.Split;
-  color: Color = Color.AzureBlue;
+  color: any = Color.AzureBlue;
 
   setLayout(layout: Layout): void {
     this.layout = layout;
     console.log(`new layout = ${this.layout}`)
   }
 
-  setColor(color: Color) {
+  setColor(color: any) {
     this.color = color;
     console.log(`new color = ${this.color}`)
   }

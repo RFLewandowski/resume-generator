@@ -17,10 +17,6 @@ import {FormsModule} from "@angular/forms";
 export class ColorControlComponent {
   protected readonly ShadeOfGray = ShadeOfGray;
 
-  pickedColor: any; // FIXME to działa ale jest bez sensu, bo z pickera nie ma konkretnej wartości z listy -
-  // więc nie można sprawdzić tak prosto czy coś jest kolorem z enuma - bo może nie być z enuma
-  // najlepiej przerobić na wyciąganie z evenu
-
   get colors(): Color[] {
     return Object.values(Color);
   }
@@ -29,6 +25,11 @@ export class ColorControlComponent {
   }
 
   setColor(color: Color): void {
+    this.sheetStateService.setColor(color);
+  }
+
+  setColorFromPicker(event: any): void {
+    const color = event.target.value;
     this.sheetStateService.setColor(color);
   }
 }

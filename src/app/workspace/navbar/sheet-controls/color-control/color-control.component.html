@@ -17,7 +17,7 @@
         <label for="colorPicker" class="color-circle" [style.background-color]="ShadeOfGray">
           <!--FIXME center me-->
           <i class="bi bi-eyedropper"></i>
-          <input id="colorPicker" type="color" [(ngModel)]="pickedColor" (change)="setColor(pickedColor)" style="position: absolute; opacity: 0;">
+          <input id="colorPicker" type="color" (change)="setColorFromPicker($event)" class="hidden">
         </label>
       </div>
     </li>
