@@ -12,7 +12,7 @@ i {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  display: flex; // TODO check if it really does something :D
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -20,6 +20,10 @@ i {
 .color-picker-container .color-circle i {
   color: white;
 }
+
+.bi-eyedropper {
+  padding-left: 0.25em;
+ }
 
 .hidden {
   position: absolute;
