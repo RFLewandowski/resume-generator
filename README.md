@@ -12,4 +12,4 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Nie mam nic do dodania XD
-Bez zmian XD
+Bez zmian XD x2
