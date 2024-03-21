@@ -5,9 +5,27 @@
     </span>
     Typography
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
+  <div class="dropdown-menu">
+
+    <div>
+      <label class="col-form-label-sm">Font</label>
+      <select class="form-select form-select-sm" (change)="setFont($event)">
+        <option *ngFor="let font of fonts" [value]="font" [selected]="font === selectedFont">
+          {{ font }}
+        </option>
+      </select>
+    </div>
+
+    <div>
+      <label class="col-form-label-sm">Size</label>
+      <div class="btn-group" role="group">
+        <button class="btn btn-outline-secondary" *ngFor="let size of fontSizes"
+                [class.active]="size === selectedSize"
+                (click)="setFontSize(size)">
+          {{ size }}
+        </button>
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -17,11 +17,12 @@ import {FormsModule} from "@angular/forms";
 export class ColorControlComponent {
   protected readonly ShadeOfGray = ShadeOfGray;
 
-  get colors(): Color[] {
-    return Object.values(Color);
+  constructor(private sheetStateService: SheetStateService) {
   }
 
-  constructor(private sheetStateService: SheetStateService) {
+  // TODO ustaw active opdowiedni kolor tak jak w fontach
+  get colors(): Color[] {
+    return Object.values(Color);
   }
 
   setColor(color: Color): void {

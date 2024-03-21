@@ -19,7 +19,7 @@ export class LayoutControlComponent {
   get layouts(): Layout[] {
     return Object.values(Layout);
   }
-
+  // todo ustaw active opdowiedni layout tak jak w fontach
 
   constructor(private sheetStateService: SheetStateService) {
   }
