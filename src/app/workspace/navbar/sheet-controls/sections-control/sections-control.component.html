@@ -5,9 +5,35 @@
     </span>
     Sections
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
+  <div class="dropdown-menu">
+    <div class="columns">
+      <!--TODO style columns after custom se-->
+      <div id="column1">
+        <div *ngFor="let item of column1">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="{{ item.label }}"
+                   [checked]="item.state" (change)="toggleSectionItemState(item)">
+            <label class="form-check-label" for="{{ item.label }}">{{ item.label }}</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="column2">
+        <div>
+          <div *ngFor="let item of column2">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="{{ item.label }}"
+                     [checked]="item.state" (change)="toggleSectionItemState(item)">
+              <label class="form-check-label" for="{{ item.label }}">{{ item.label }}</label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="dropdown-divider"></div>
+      <label>Add custom section</label>
+      <i>TODO</i>
+
+    </div>
+  </div>
