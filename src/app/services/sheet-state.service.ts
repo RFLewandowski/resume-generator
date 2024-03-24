@@ -59,7 +59,7 @@ export class SheetStateService {
     const column = this.column1.includes(item) ? this.column1 : (this.column2.includes(item) ? this.column2 : null);
     if (column) {
       let targetItem = column.find(x => x === item);
-      console.log('Section item updated: ', item);
+      console.log('Section item updated: ', targetItem);
     } else {
       console.log('Section item not found.');
     }
