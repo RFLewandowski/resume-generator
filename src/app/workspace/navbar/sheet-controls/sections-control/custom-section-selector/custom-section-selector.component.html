@@ -1,23 +1,24 @@
 <label class="form-label">Add custom section</label>
 <div class="custom-sections">
   <form [formGroup]="customSectionForm" (ngSubmit)="addCustomSection()">
-    <div class="row">
-      <div class="col-md-4">
-        <select class="form-select" formControlName="type">
+    <div class="row selects-container">
+      <div class="select-wrapper">
+        <select class="form-select form-select-sm" formControlName="type">
           <option value="" disabled selected>Select Type</option>
-          <option [value]="sectionType.TextSection">Custom Text Section</option>
-          <option [value]="sectionType.ListSection">Custom List Section</option>
+          <option [value]="sectionType.TextSection">{{ sectionType.TextSection }}</option>
+          <option [value]="sectionType.ListSection">{{ sectionType.ListSection }}</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <select class="form-select" formControlName="placement">
+      <div class="select-wrapper">
+        <select class="form-select form-select-sm" formControlName="placement">
           <option value="" disabled selected>Select Placement</option>
-          <option [value]="placement.Primary">Primary Placement</option>
-          <option [value]="placement.Secondary">Secondary Placement</option>
+          <!--       TODO   need to be translated based on layout-->
+          <option [value]="placement.Primary">{{ placement.Primary }}</option>
+          <option [value]="placement.Secondary">{{ placement.Secondary }}</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <button type="submit" class="btn btn-primary">
+      <div class="button-wrapper">
+        <button type="submit" class="btn btn-secondary btn-sm">
           <i class="bi bi-plus-square"></i>
         </button>
       </div>

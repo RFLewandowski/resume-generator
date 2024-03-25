@@ -1,6 +1,6 @@
 export enum SectionType {
-  TextSection = "CustomTextSection",
-  ListSection = "CustomListSection",
+  TextSection = "Text Section",
+  ListSection = "List Section",
 }
 
 export enum Placement {

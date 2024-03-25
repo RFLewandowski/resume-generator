@@ -1,3 +1,8 @@
+.dropdown-menu {
+  padding-left: 15px; // hacks to fit two inputs and button
+  padding-right: 15px;
+}
+
 .columns,
 .custom-sections {
   display: flex;
