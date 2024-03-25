@@ -1,0 +1,29 @@
+<label class="form-label">Add custom section</label>
+<div class="custom-sections">
+  <form [formGroup]="customSectionForm" (ngSubmit)="addCustomSection()">
+    <div class="row">
+      <div class="col-md-4">
+        <select class="form-select" formControlName="type">
+          <option value="" disabled selected>Select Type</option>
+          <option [value]="sectionType.TextSection">Custom Text Section</option>
+          <option [value]="sectionType.ListSection">Custom List Section</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select class="form-select" formControlName="placement">
+          <option value="" disabled selected>Select Placement</option>
+          <option [value]="placement.Primary">Primary Placement</option>
+          <option [value]="placement.Secondary">Secondary Placement</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">
+          <i class="bi bi-plus-square"></i>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="showError" class="alert alert-danger mt-3">
+      Please select 'Type' and 'Placement' for your custom resume section.
+    </div>
+  </form>
+</div>
