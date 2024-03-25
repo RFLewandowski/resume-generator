@@ -9,7 +9,7 @@
     <div class="columns">
       <div id="column1">
         <label class="form-label mb-2px">Personal details</label>
-        <div *ngFor="let item of sheetStateService.column1">
+        <div *ngFor="let item of sheetStateService.SectionItemsColumn1">
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="{{ item.label }}"
                    [checked]="item.state" (change)="toggleSectionItem(item)">
@@ -19,7 +19,7 @@
       </div>
 
       <div id="column2">
-        <div *ngFor="let item of sheetStateService.column2">
+        <div *ngFor="let item of sheetStateService.SectionItemsColumn2">
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="{{ item.label }}"
                    [checked]="item.state" (change)="toggleSectionItem(item)">

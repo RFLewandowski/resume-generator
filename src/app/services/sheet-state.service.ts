@@ -17,7 +17,7 @@ export class SheetStateService {
   color: any = Color.AzureBlue;
   font: Font = Font.Nunito;
   fontSize: FontSize = FontSize.Medium;
-  column1: SectionItem[] = [ // FIXME to średnio mi się podoba - lepiej zrefactorować żeby była jdena lista i trzymała info jaka to kolumna bo nazwa column1 ma sens na froncie a w jsonie, ani na be nie ma najmniejszego
+  SectionItemsColumn1: SectionItem[] = [
     {label: 'Location', state: true},
     {label: 'Phone Number', state: true},
     {label: 'Email', state: true},
@@ -26,7 +26,7 @@ export class SheetStateService {
     {label: 'Custom 1', state: false},
     {label: 'Custom 2', state: false}
   ];
-  column2: SectionItem[] = [
+  SectionItemsColumn2: SectionItem[] = [
     {label: 'Picture', state: true},
     {label: 'About Me', state: true},
     {label: 'Role', state: true},
@@ -60,7 +60,9 @@ export class SheetStateService {
 
   toggleSectionItem(item: SectionItem) {
     item.state = !item.state;
-    const column = this.column1.includes(item) ? this.column1 : (this.column2.includes(item) ? this.column2 : null);
+    const column = this.SectionItemsColumn1.includes(item)
+      ? this.SectionItemsColumn1
+      : (this.SectionItemsColumn2.includes(item) ? this.SectionItemsColumn2 : null);
     if (column) {
       let targetItem = column.find(x => x === item);
       console.log('Section item updated: ', targetItem);
