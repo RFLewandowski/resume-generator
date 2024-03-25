@@ -1,7 +1,7 @@
 export enum Layout {
-  Split = "SPLIT_LAYOUT",
-  Classic = "CLASSIC_LAYOUT",
-  Hybrid = "HYBRID_LAYOUT"
+  Split = "Split Layout",
+  Classic = "Classic Layout",
+  Hybrid = "Hybrid Layout"
 }
 
 export const LayoutIcons = {
