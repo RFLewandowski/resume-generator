@@ -4,6 +4,9 @@ import {Color} from "../workspace/navbar/sheet-controls/color-control/color";
 import {Font} from "../workspace/navbar/sheet-controls/typography-control/font";
 import {FontSize} from "../workspace/navbar/sheet-controls/typography-control/font-size";
 import {SectionItem} from "../workspace/navbar/sheet-controls/sections-control/section-item";
+import {
+  CustomSectionItem
+} from "../workspace/navbar/sheet-controls/sections-control/custom-section-selector/custom-section-item";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +17,7 @@ export class SheetStateService {
   color: any = Color.AzureBlue;
   font: Font = Font.Nunito;
   fontSize: FontSize = FontSize.Medium;
-  column1: SectionItem[] = [
+  column1: SectionItem[] = [ // FIXME to średnio mi się podoba - lepiej zrefactorować żeby była jdena lista i trzymała info jaka to kolumna bo nazwa column1 ma sens na froncie a w jsonie, ani na be nie ma najmniejszego
     {label: 'Location', state: true},
     {label: 'Phone Number', state: true},
     {label: 'Email', state: true},
@@ -33,6 +36,7 @@ export class SheetStateService {
     {label: 'Languages', state: false},
     {label: 'Hobbies', state: false}
   ];
+  customSectionItems: CustomSectionItem[] = [];
 
   setLayout(layout: Layout): void {
     this.layout = layout;
@@ -65,4 +69,8 @@ export class SheetStateService {
     }
   }
 
+  addCustomSection(customSectionItem: CustomSectionItem) {
+    this.customSectionItems.push(customSectionItem);
+    console.log('Custom section item added: ', this.customSectionItems);
+  }
 }

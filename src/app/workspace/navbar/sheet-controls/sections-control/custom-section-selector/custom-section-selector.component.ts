@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {CustomSectionItem, Placement, SectionType} from "./custom-section-item";
 import {NgIf} from "@angular/common";
+import {SheetStateService} from "../../../../../services/sheet-state.service";
 
 @Component({
   selector: 'app-custom-section-selector',
@@ -19,7 +20,7 @@ export class CustomSectionSelectorComponent implements OnInit {
   customSectionForm!: FormGroup;
   showError: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private sheetStateService: SheetStateService) {
   }
 
   ngOnInit(): void {
@@ -35,10 +36,19 @@ export class CustomSectionSelectorComponent implements OnInit {
         type: this.customSectionForm.value.type,
         placement: this.customSectionForm.value.placement
       };
+      this.sheetStateService.addCustomSection(customSectionItem)
+
       this.showError = false;
-      console.log(customSectionItem)
+      this.resetForm();
     } else {
       this.showError = true;
     }
+  }
+
+  private resetForm() {
+    this.customSectionForm.reset({
+      type: '',
+      placement: ''
+    });
   }
 }
