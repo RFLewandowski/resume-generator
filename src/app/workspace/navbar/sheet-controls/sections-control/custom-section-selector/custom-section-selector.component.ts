@@ -39,7 +39,7 @@ export class CustomSectionSelectorComponent implements OnInit {
       this.sheetStateService.addCustomSection(customSectionItem)
 
       this.showError = false;
-      this.resetForm();
+      // this.resetForm(); // TODO it would be best to hide on close of dropdown, but not priority
     } else {
       this.showError = true;
     }
