@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import {MenuComponent} from "./navbar/menu.component";
 import {SheetComponent} from "./sheet/sheet.component";
 
@@ -13,5 +13,12 @@ import {SheetComponent} from "./sheet/sheet.component";
   styleUrl: './workspace.component.scss'
 })
 export class WorkspaceComponent {
+
+  constructor(private renderer: Renderer2) { }
+
+  ngOnInit(): void {
+    this.renderer.setStyle(document.body, 'background-color', '#F7A689'); // TODO set this dynamically
+  }
+
 
 }

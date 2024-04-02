@@ -2,19 +2,23 @@
 
 @import "primeng/resources/themes/lara-dark-blue/theme.css";
 @import "primeng/resources/primeng.css";
-@import "bootstrap-icons/font/bootstrap-icons.css"; // TODO consider change of icon library
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
-
-.dropdown-item {
-  cursor: pointer;
+body {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.dropdown-item:active {
-  background-color: var(--bs-secondary) !important;
-}
-
-.form-select:focus {
-  border-color: rgba(0, 0, 0, 0.25);
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.13);
-}
+//.dropdown-item {
+//  cursor: pointer;
+//}
+//
+//.dropdown-item:active {
+//  background-color: var(--bs-secondary) !important;
+//}
+//
+//.form-select:focus {
+//  border-color: rgba(0, 0, 0, 0.25);
+//  outline: 0;
+//  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.13);
+//}

@@ -1,26 +1,32 @@
-#menu {
-  display: flex;
-  align-items: center;
-
-  .container {
-    flex: 1;
-    display: flex;
-  }
-
-  .logo-container {
-    @extend .container;
-    justify-content: flex-start;
-    padding-left: 0.6rem;
-  }
-
-  .sheet-control-container {
-    @extend .container;
-    justify-content: center;
-  }
-
-  .left-menu-container {
-    @extend .container;
-    justify-content: flex-end;
-    padding-right: 0.6rem;
-  }
+#menu { // FIXME - should be as without it,
+  //position: fixed; /* Fixed positioning */
+  //top: 20px; /* Adjust this value as needed */
+  z-index: 999;
 }
+
+//#menu {
+//  display: flex;
+//  align-items: center;
+//
+//  .container {
+//    flex: 1;
+//    display: flex;
+//  }
+//
+//  .logo-container {
+//    @extend .container;
+//    justify-content: flex-start;
+//    padding-left: 0.6rem;
+//  }
+//
+//  .sheet-control-container {
+//    @extend .container;
+//    justify-content: center;
+//  }
+//
+//  .left-menu-container {
+//    @extend .container;
+//    justify-content: flex-end;
+//    padding-right: 0.6rem;
+//  }
+//}
