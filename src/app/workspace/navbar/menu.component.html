@@ -1,33 +1,19 @@
-<p-toolbar id="menu"  styleClass="bg-gray-900 shadow-2"
-           [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))' }">
-  <ng-template pTemplate="start">
-    <img ngSrc="assets/logo/rocket-logo-without-details.png" height="48" width="48"/>
-<!--    TODO, fixme, use white-logo-->
-  </ng-template>
-  <ng-template pTemplate="center">
-<!--    TODO poniższe trzeba przenieść do <app-sheet-controls></app-sheet-controls -->
-<!--    <div class="flex flex-wrap align-items-center gap-3">-->
-<!--      <button-->
-<!--        class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10-->
-<!--        transition-all transition-duration-200">-->
-<!--        <i class="pi pi-home text-2xl"></i>-->
-<!--      </button>-->
-<!--      <button-->
-<!--        class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">-->
-<!--        <i class="pi pi-user text-2xl"></i></button>-->
-<!--      <button-->
-<!--        class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200">-->
-<!--        <i class="pi pi-search text-2xl"></i></button>-->
-<!--    </div>-->
-  </ng-template>
-  <ng-template pTemplate="end">
-    <div class="flex align-items-center gap-2">
-      <!--      <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />-->
-      <span class="font-bold text-bluegray-50">left-menu</span>
-    </div>
-  </ng-template>
-</p-toolbar>
-
+<div class="menu-wrapper">
+  <p-toolbar styleClass="bg-gray-900 shadow-2"
+             [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))' }">
+    <ng-template pTemplate="start">
+      <img ngSrc="assets/logo/black-logo.png" height="41" width="187" alt="RocketCVLogo">
+    </ng-template>
+    <ng-template pTemplate="center">
+      <app-sheet-controls></app-sheet-controls>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex align-items-center gap-2">
+        <span class="font-bold text-bluegray-50">left-menu</span>
+      </div>
+    </ng-template>
+  </p-toolbar>
+</div>
 
 <!--<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top menu">-->
 <!--  <div class="logo-container">-->

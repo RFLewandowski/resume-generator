@@ -1,6 +1,8 @@
-#menu { // FIXME - should be as without it,
-  //position: fixed; /* Fixed positioning */
-  //top: 20px; /* Adjust this value as needed */
+.menu-wrapper {
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  right: 1rem;
   z-index: 999;
 }
 
