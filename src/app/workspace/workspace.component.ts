@@ -20,5 +20,4 @@ export class WorkspaceComponent {
     this.renderer.setStyle(document.body, 'background-color', '#F7A689'); // TODO set this dynamically
   }
 
-
 }
