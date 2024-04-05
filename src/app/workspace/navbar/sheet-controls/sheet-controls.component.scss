@@ -3,5 +3,7 @@
   flex-direction: row;
   gap: 0.6rem;
   width: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
