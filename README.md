@@ -12,4 +12,4 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Nic się nie dzieje :)
-x2
+x3
