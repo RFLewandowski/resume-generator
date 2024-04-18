@@ -17,7 +17,7 @@ export class WorkspaceComponent {
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
-    this.renderer.setStyle(document.body, 'background-color', '#F7A689'); // TODO set this dynamically
+    this.renderer.setStyle(document.body, 'background-color', '#caf1d8'); // TODO set this dynamically
   }
 
 }
