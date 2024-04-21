@@ -3,6 +3,8 @@ import {LayoutControlComponent} from "./layout-control/layout-control.component"
 import {SectionsControlComponent} from "./sections-control/sections-control.component";
 import {ColorControlComponent} from "./color-control/color-control.component";
 import {TypographyControlComponent} from "./typography-control/typography-control.component";
+import {ButtonModule} from "primeng/button";
+import {SvgIconComponent} from "../../../svg-icon/svg-icon.component";
 
 @Component({
   selector: 'app-sheet-controls',
@@ -11,12 +13,14 @@ import {TypographyControlComponent} from "./typography-control/typography-contro
     LayoutControlComponent,
     SectionsControlComponent,
     ColorControlComponent,
-    TypographyControlComponent
+    TypographyControlComponent,
+    ButtonModule,
+    SvgIconComponent
   ],
   templateUrl: './sheet-controls.component.html',
   styleUrl: './sheet-controls.component.scss'
 })
 export class SheetControlsComponent {
-
+// FIXME tutaj będzie sporo importów do wywalania, bo to będzie tylko kontener na buttony menu
 
 }

@@ -12,3 +12,5 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 working on icon styling.
+
+https://www.geeksforgeeks.org/angular-primeng-menu-events/
