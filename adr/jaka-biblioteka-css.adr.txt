@@ -1,0 +1,23 @@
+Jakiej biblioteczki CSSowej użyć?
+
+problem:
+Chcemy użyć biblioteki CSSowej, żeby przyspieszyć i ułatwić tworzenie CSSów tym bardziej, że jest to słaba strona w skillsecie zespołu (jednoosobowego).
+
+opcje:
+1.nic
+2.primflex
+3.tailwind
+4.primeflex + tailwind
+
+obcje do wyboru:
+1. żadnych korzyści, Arek i Konrad nie używają, ale oni i tak muszą klepać customowe rzeczy i dosć zaawansowane, dodatkowo nie znają tych bibliotek
+2. bezpieczna opcja ale mało gotowców -  z drugiej strony nie potrzebuję dużo; bo to są proste rzeczy i mogę popatrzeć/wygenerować w tailwindzie i poszukać gotowców w primeflex
+3. będzie duzo gotowców wprost + chatgpt powinien ogarnąć podpowiedzi, ale za to to spodziewamy się show stopping problems:
+	- brak współpracy z theme - co jest dla mnie podstawowe  i nie da się łatwo obejść
+	- dziwne problemy niekompatybilności primeNg+ - powinno dać się łatwo obejść, ale może być ciężko wykryć
+4. wszystkie wady 3, plus problemy z integracją primeflex i tailwind - z uwagi na to, że CSS jest słabą stroną zespołu - jeszcze wieksze ryzyko.
+
+decyzja:
+primeNG + primeflex z uwagi na spodziewane problemy tailwind+primeng
+gdyby były problemy z małą ilością gotowców primeflex:
+gotowce znajdujemy z tailwinda, albo chatgpt generuje CSSa, a my szukamy jak to zrobić w dokumentacji primeflex

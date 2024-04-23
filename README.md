@@ -11,6 +11,9 @@ Kliknąć w [link](https://RFLewandowski.github.io/resume-generator) i wypełni�
 Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
-working on icon styling.
+Empty for now.
 
+-----------------------------
+working on icon styling.
 https://www.geeksforgeeks.org/angular-primeng-menu-events/
+working on implementation primeflex/tailwind
