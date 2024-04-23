@@ -17,3 +17,5 @@ Empty for now.
 working on icon styling.
 https://www.geeksforgeeks.org/angular-primeng-menu-events/
 working on implementation primeflex/tailwind
+
+learning tailwind+primeflex+primeng
