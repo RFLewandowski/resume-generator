@@ -19,3 +19,5 @@ https://www.geeksforgeeks.org/angular-primeng-menu-events/
 working on implementation primeflex/tailwind
 
 learning tailwind+primeflex+primeng
+
+https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state
