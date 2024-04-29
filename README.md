@@ -22,3 +22,4 @@ learning tailwind+primeflex+primeng
 
 https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state
 
+.
