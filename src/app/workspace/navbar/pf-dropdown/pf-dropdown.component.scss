@@ -4,13 +4,13 @@
   background-color: var(--surface-0);
 }
 
-#pf-dropdown-button #pf-dropdown-button-icon,
-#pf-dropdown-button #pf-dropdown-button-caret-down {
+#pf-dropdown #pf-dropdown-button-icon,
+#pf-dropdown #pf-dropdown-button-caret-down {
   color: var(--surface-300); /* Set default color to yellow */
 }
 
-#pf-dropdown-button:hover #pf-dropdown-button-icon,
-#pf-dropdown-button:hover #pf-dropdown-button-caret-down {
+#pf-dropdown:hover #pf-dropdown-button-icon,
+#pf-dropdown:hover #pf-dropdown-button-caret-down {
   //color: red; /* Change to your desired color code or use a color variable */
   color: var(--surface-800); /* Change to your desired color code or use a color variable */
 }
