@@ -1,15 +1,11 @@
-import { Component } from '@angular/core';
-import {MenubarExampleComponent} from "../../experiment/menubar-example/menubar-example.component";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-sheet',
   standalone: true,
-  imports: [
-    MenubarExampleComponent
-  ],
+  imports: [],
   templateUrl: './sheet.component.html',
   styleUrl: './sheet.component.scss'
 })
 export class SheetComponent {
- // TODO remove menu MenubarExampleComponent when not required
 }
