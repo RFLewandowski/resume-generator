@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SvgIconComponent} from "../../../svg-icon/svg-icon.component";
+import {SvgIconComponent} from "../../svg-icon/svg-icon.component";
 import {StyleClassModule} from "primeng/styleclass";
 
 @Component({
