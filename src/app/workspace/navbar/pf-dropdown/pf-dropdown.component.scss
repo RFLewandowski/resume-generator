@@ -1,25 +1,22 @@
-:host {
-  //FIXME po co to jest?
-  //font-family: var(--font-family);
+#pf-dropdown, #pf-dropdown-content {
   background-color: var(--surface-0);
 }
 
 #pf-dropdown #pf-dropdown-button-icon,
 #pf-dropdown #pf-dropdown-button-caret-down {
-  color: var(--surface-300); /* Set default color to yellow */
+  color: var(--surface-300);
 }
 
 #pf-dropdown:hover #pf-dropdown-button-icon,
 #pf-dropdown:hover #pf-dropdown-button-caret-down {
-  //color: red; /* Change to your desired color code or use a color variable */
-  color: var(--surface-800); /* Change to your desired color code or use a color variable */
+  color: var(--surface-800);
 }
 
 #pf-dropdown-content {
-  display: none; /* Initially hide the dropdown content */
+  display: none;
 }
 
 #pf-dropdown-button:hover + #pf-dropdown-content,
 #pf-dropdown-content:hover {
-  display: block; /* Show the dropdown content when #pf-dropdown-button, or #pf-dropdown-content is hovered */
+  display: block;
 }
