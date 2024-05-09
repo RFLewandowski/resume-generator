@@ -5,6 +5,7 @@ import {ColorControlComponent} from "./color-control/color-control.component";
 import {TypographyControlComponent} from "./typography-control/typography-control.component";
 import {ButtonModule} from "primeng/button";
 import {SvgIconComponent} from "../../../svg-icon/svg-icon.component";
+import {PfDropdownComponent} from "../pf-dropdown/pf-dropdown.component";
 
 @Component({
   selector: 'app-sheet-controls',
@@ -15,7 +16,8 @@ import {SvgIconComponent} from "../../../svg-icon/svg-icon.component";
     ColorControlComponent,
     TypographyControlComponent,
     ButtonModule,
-    SvgIconComponent
+    SvgIconComponent,
+    PfDropdownComponent
   ],
   templateUrl: './sheet-controls.component.html',
   styleUrl: './sheet-controls.component.scss'

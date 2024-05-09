@@ -1,0 +1,18 @@
+<div class="flex min-h-screen align-items-center justify-content-center">
+  <div class="border-1 border-400 border-round relative">
+    <div class="flex flex- align-items-center p-3 text-900 cursor-pointer"
+    pStyleClass="@next" enterFromClass="hidden" enterActiveClass="scalein"
+    leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true" [hideOnEscape]="true">
+      <span>Dropdown</span>
+      <app-svg-icon class="p-icon p-submenu-icon ml-2" [path]="'assets/icons/caret-down.svg'"></app-svg-icon>
+    </div>
+    <div class="absolute shadow-2 min-w-full py-2 hidden origin-top border-1 border-round border-300">
+      <ul class="list-none p-0 m-0">
+        <li><a class="block py-2 px-3 no-underline text-900 hover:surface-200 transition-all transition-duration-200 cursor-pointer" href="https://primeng.org/installation">PrimeFaces</a></li>
+        <li><a class="block py-2 px-3 no-underline text-900 hover:surface-200 transition-all transition-duration-200 cursor-pointer" href="https://primeng.org/installation">PrimeNG</a></li>
+        <li><a class="block py-2 px-3 no-underline text-900 hover:surface-200 transition-all transition-duration-200 cursor-pointer" href="https://primeng.org/installation">PrimeReact</a></li>
+        <li><a class="block py-2 px-3 no-underline text-900 hover:surface-200 transition-all transition-duration-200 cursor-pointer" href="https://primeng.org/installation">PrimeView</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
