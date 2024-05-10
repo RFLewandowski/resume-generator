@@ -12,14 +12,3 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Empty for now.
-
------------------------------
-working on icon styling.
-https://www.geeksforgeeks.org/angular-primeng-menu-events/
-working on implementation primeflex/tailwind
-
-learning tailwind+primeflex+primeng
-
-https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state
-
-..........
