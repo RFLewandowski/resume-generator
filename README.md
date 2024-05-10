@@ -12,3 +12,5 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 Empty for now.
+
+.
