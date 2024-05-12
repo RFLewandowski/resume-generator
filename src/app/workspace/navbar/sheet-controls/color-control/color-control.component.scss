@@ -1,6 +1,6 @@
-i {
-  padding-right: 7px; // FIXME - it could be better with flex
-}
+//i {
+//  padding-right: 7px; // FIXME - it could be better with flex
+//}
 
 
 //@import 'bootstrap/scss/bootstrap';
@@ -8,24 +8,25 @@ i {
 //  --bs-dropdown-min-width: none; // override BS to width of only color pickers
 //}
 
-.color-circle {
+.color-square {
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 50%;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--surface-300);
 }
 
-.color-picker-container .color-circle i {
-  color: white;
-}
+//.color-picker-container .color-circle i {
+//  color: white;
+//}
 
 .bi-eyedropper { // https://icons.getbootstrap.com/icons/eyedropper/ how to center, maybe smaller box ?
   padding-left: 0.25em;
  }
 
-.hidden {
-  position: absolute;
-  opacity: 0;
-}
+//.hidden {
+//  position: absolute;
+//  opacity: 0;
+//}
