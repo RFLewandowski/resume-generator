@@ -11,7 +11,7 @@
       <li>
         <div *ngFor="let color of colors">
           <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer" (click)="setColor(color)">
-            <!-- TODO trochę stylowania, feedback what is currently set           -->
+            <!-- TODO trochę stylowania, żeby przypominało pickera, styl pokazujący co jest obecnie ustawione -->
             <div class="color-square" [style.background-color]="color"></div>
           </a>
         </div>
@@ -23,10 +23,10 @@
 <!--          </label>-->
 <!--        </div>-->
       </li>
-<!--      TODO picker nie reaguje na kliknięcie-->
+<!--      TODO ostylować picker, start z koloru: ShadeOfGray, ikonka background kolor nie-czarny, tylko taki jak menu itp-->
       <li>
         <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer">
-            <p-colorPicker [(ngModel)]="color" showTransitionOptions="false" hideTransitionOptions="false"/>
+            <p-colorPicker (onChange)="setColorFromPicker($event)" showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear"/>
         </a>
       </li>
     </ul>

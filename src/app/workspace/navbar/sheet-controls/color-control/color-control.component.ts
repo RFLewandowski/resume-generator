@@ -19,8 +19,7 @@ import {ColorPickerModule} from "primeng/colorpicker";
   styleUrl: './color-control.component.scss'
 })
 export class ColorControlComponent {
-  protected readonly ShadeOfGray = ShadeOfGray;
-  protected color: string | undefined;// test picker
+  protected readonly ShadeOfGray = ShadeOfGray; // TODO starting color for picker
 
   constructor(private sheetStateService: SheetStateService) {
   }
@@ -35,7 +34,8 @@ export class ColorControlComponent {
   }
 
   setColorFromPicker(event: any): void {
-    const color = event.target.value;
+    // console.log(event)
+    const color = event.value;
     this.sheetStateService.setColor(color);
   }
 }
