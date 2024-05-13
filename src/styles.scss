@@ -10,9 +10,6 @@ body {
   margin-right: 0;
 }
 
-#pf-dropdown, #pf-dropdown-content {
-  background-color: var(--surface-0);
-}
 
 #pf-dropdown #pf-dropdown-button-icon,
 #pf-dropdown #pf-dropdown-button-caret-down {
@@ -28,13 +25,17 @@ body {
   display: none;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+#pf-dropdown, #pf-dropdown-content {
+  background-color: var(--surface-0);
+}
+
 #pf-dropdown-button:hover + #pf-dropdown-content,
 #pf-dropdown-content:hover {
   display: block;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 

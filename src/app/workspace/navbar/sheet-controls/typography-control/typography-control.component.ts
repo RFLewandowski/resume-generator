@@ -15,11 +15,11 @@ import {FontSize} from "./font-size";
 })
 export class TypographyControlComponent {
 
-  fonts: Font[] = Object.values(Font);
   selectedFont: Font = this.sheetStateService.font
-
-  fontSizes: FontSize[] = Object.values(FontSize);
   selectedSize: FontSize = this.sheetStateService.fontSize;
+
+  fonts: Font[] = Object.values(Font);
+  fontSizes: FontSize[] = Object.values(FontSize);
 
   constructor(private sheetStateService: SheetStateService) {
   }

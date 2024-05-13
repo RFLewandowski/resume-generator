@@ -8,10 +8,11 @@
   </div>
   <div id="pf-dropdown-content" class="absolute shadow-2 min-w-full py-2 border-1 border-round border-100">
     <ul class="list-none p-0 m-0">
-<!--      TODO nie ma feedbacku jaki kolor wybrany - można kombinować tak jak tutaj: https://primeng.org/menu, wybrany będzie wyraźniejszy-->
-      <li *ngFor="let layout of layouts">
-        <a class="block min-w-max py-2 px-3 no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer" (click)="setLayout(layout)">
-          <span>
+      <li id="pf-dropdown-option" *ngFor="let layout of layouts">
+        <a class="block min-w-max py-2 px-3 no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer"
+           (click)="setLayout(layout)"
+           [ngClass]="{ 'pf-dropdown-option-selected': layout === selectedLayout }">
+          <span class="text-300" [ngClass]="{ 'pf-dropdown-option-icon-active': layout === selectedLayout }">
             <i class="bi bi-{{ LayoutIcons[layout] }} pr-2"></i>
           </span>
             {{ layout }}
