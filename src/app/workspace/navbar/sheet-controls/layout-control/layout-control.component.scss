@@ -6,4 +6,10 @@
   color: var(--surface-800) !important;
 }
 
-//todo hover nad opcją podświetla ikonę
+#pf-dropdown-option {
+  &:hover {
+    span {
+      color: var(--surface-800) !important;
+    }
+  }
+}
