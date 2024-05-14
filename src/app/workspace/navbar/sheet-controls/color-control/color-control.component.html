@@ -8,9 +8,12 @@
   </div>
   <div id="pf-dropdown-content" class="absolute shadow-2 min-w-full py-2 border-1 border-round border-100">
     <ul class="list-none p-0 m-0">
-      <li>
+      <li id="pf-dropdown-option">
         <div *ngFor="let color of colors">
-          <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer" (click)="setColor(color)">
+          <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer"
+             [ngClass]="{ 'pf-dropdown-option-selected': color === selectedColor }"
+
+             (click)="setColor(color)">
             <!-- TODO trochę stylowania, żeby przypominało pickera, styl pokazujący co jest obecnie ustawione -->
             <div class="color-square" [style.background-color]="color"></div>
           </a>
@@ -23,9 +26,11 @@
 <!--          </label>-->
 <!--        </div>-->
       </li>
-<!--      TODO ostylować picker, start z koloru: ShadeOfGray, ikonka background kolor nie-czarny, tylko taki jak menu itp-->
-      <li>
-        <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer">
+<!--      TODO ostylować picker, start z koloru: ShadeOfGray, ikonka background kolor nie-czarny, tylko taki jak menu itp, nie da się kliknąć w pasek, trzeba w kwadracik  -->
+      <li id="pf-dropdown-option-picker">
+        <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer"
+           [ngClass]="{ 'pf-dropdown-option-selected': isSelectedFromPicker() }"
+        >
             <p-colorPicker [ngModel]=defaultPickerColor (onChange)="setColorFromPicker($event)"
               showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear"/>
         </a>

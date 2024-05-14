@@ -18,6 +18,10 @@
   border: 1px solid var(--surface-300);
 }
 
+.pf-dropdown-option-selected {
+  background-color: var(--surface-300) !important;
+}
+
 //.color-picker-container .color-circle i {
 //  color: white;
 //}
