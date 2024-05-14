@@ -26,7 +26,8 @@
 <!--      TODO ostylować picker, start z koloru: ShadeOfGray, ikonka background kolor nie-czarny, tylko taki jak menu itp-->
       <li>
         <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer">
-            <p-colorPicker (onChange)="setColorFromPicker($event)" showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear"/>
+            <p-colorPicker [ngModel]=defaultPickerColor (onChange)="setColorFromPicker($event)"
+              showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear"/>
         </a>
       </li>
     </ul>
@@ -85,3 +86,11 @@
 <!--  </ul>-->
 
 <!--</div>-->
+
+<!--
+TODO:
+  - ikona na pickerze
+  - ustawienie aktualnego koloru
+
+
+-->
