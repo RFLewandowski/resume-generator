@@ -18,84 +18,20 @@
             <div class="color-square" [style.background-color]="color"></div>
           </a>
         </div>
-
-<!--        <div class="dropdown-item color-picker-container">-->
-<!--          <label for="colorPicker" class="color-circle" [style.background-color]="ShadeOfGray">-->
-<!--            <i class="bi bi-eyedropper"></i>-->
-<!--            <input id="colorPicker" type="color" (change)="setColorFromPicker($event)" class="hidden">-->
-<!--          </label>-->
-<!--        </div>-->
       </li>
-<!--      TODO ostylować picker, start z koloru: ShadeOfGray, ikonka background kolor nie-czarny, tylko taki jak menu itp, nie da się kliknąć w pasek, trzeba w kwadracik  -->
+<!--      TODO ostylować picker, nie da się kliknąć w pasek, trzeba w kwadracik  -->
       <li id="pf-dropdown-option-picker">
         <a class="block py-2 px-3 flex justify-content-center no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer"
            [ngClass]="{ 'pf-dropdown-option-selected': isSelectedFromPicker() }"
         >
-            <p-colorPicker [ngModel]=defaultPickerColor (onChange)="setColorFromPicker($event)"
-              showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear"/>
+          <div class="color-picker-container">
+            <i class="bi bi-eyedropper"></i>
+            <p-colorPicker [ngModel]="defaultPickerColor" (onChange)="setColorFromPicker($event)"
+                           showTransitionOptions=".01s linear" hideTransitionOptions=".01s linear">
+            </p-colorPicker>
+          </div>
         </a>
       </li>
     </ul>
   </div>
 </div>
-
-
-<!--<div id="pf-dropdown" class="border-round hover:surface-100 relative">-->
-<!--  <div  id="pf-dropdown-button" class="flex align-items-center px-3 py-2 text-900 cursor-pointer">-->
-<!--      <span id="pf-dropdown-button-icon">-->
-<!--        <i class="bi bi-layout-text-window-reverse mr-2"></i>-->
-<!--      </span>-->
-<!--    <span>Dropdown</span>-->
-<!--    <app-svg-icon id="pf-dropdown-button-caret-down" class="p-icon p-submenu-icon ml-2" [path]="'assets/icons/caret-down.svg'"></app-svg-icon>-->
-<!--  </div>-->
-<!--  <div id="pf-dropdown-content" class="absolute shadow-2 min-w-full py-2 border-1 border-round border-100">-->
-<!--    <ul class="list-none p-0 m-0">-->
-<!--      <li *ngFor="let layout of layouts">-->
-<!--        <a class="block min-w-max py-2 px-3 no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer" (click)="setLayout(layout)">-->
-<!--          <span>-->
-<!--            <i class="bi bi-{{ LayoutIcons[layout] }} pr-2"></i>-->
-<!--          </span>-->
-<!--          {{ layout }}-->
-<!--        </a>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--</div>-->
-
-
-
-<!---------------------------------------------------------------->
-
-<!--<div class="dropdown">-->
-<!--  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--          <span>-->
-<!--            <i class="bi bi-palette"></i>-->
-<!--          </span>-->
-<!--    Color-->
-<!--  </button>-->
-<!--  <ul class="dropdown-menu">-->
-<!--    <li>-->
-<!--      <div *ngFor="let color of colors">-->
-<!--        <a class="dropdown-item" (click)="setColor(color)">-->
-<!--          <div class="color-circle" [style.background-color]="color"></div>-->
-<!--        </a>-->
-<!--      </div>-->
-
-<!--      <div class="dropdown-item color-picker-container">-->
-<!--        <label for="colorPicker" class="color-circle" [style.background-color]="ShadeOfGray">-->
-<!--          <i class="bi bi-eyedropper"></i>-->
-<!--          <input id="colorPicker" type="color" (change)="setColorFromPicker($event)" class="hidden">-->
-<!--        </label>-->
-<!--      </div>-->
-<!--    </li>-->
-<!--  </ul>-->
-
-<!--</div>-->
-
-<!--
-TODO:
-  - ikona na pickerze
-  - ustawienie aktualnego koloru
-
-
--->

@@ -5,7 +5,7 @@ export enum Color { // RENAMEME to DefaultColors
   MintGreen = "#2ab993",
   Black = "#000000"
 }
-export const ShadeOfGray:string = "#adb5bd"
+export const ShadeOfGray:string = "#8b9299" //#adb5bd
 
 
 /* co wyświetlać
