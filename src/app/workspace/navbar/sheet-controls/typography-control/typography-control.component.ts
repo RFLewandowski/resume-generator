@@ -37,7 +37,7 @@ export class TypographyControlComponent {
   }
 
   setFont(event: any) {
-    const font: Font = event.target.value;
+    const font: Font = event.value;
     this.sheetStateService.setFont(font);
     this.selectedFont = this.sheetStateService.font
   }
