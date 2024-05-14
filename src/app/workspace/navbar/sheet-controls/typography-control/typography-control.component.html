@@ -1,31 +1,43 @@
-<div class="dropdown">
-  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <span>
-      <i class="bi bi-fonts"></i>
-    </span>
-    Typography
-  </button>
-  <div class="dropdown-menu">
-
-    <div>
-      <label class="col-form-label-sm">Font</label>
-      <select class="form-select form-select-sm" (change)="setFont($event)">
-        <option *ngFor="let font of fonts" [value]="font" [selected]="font === selectedFont">
-          {{ font }}
-        </option>
-      </select>
-    </div>
-
-    <div>
-      <label class="col-form-label-sm">Size</label>
-      <div class="btn-group" role="group">
-        <button class="btn btn-outline-secondary" *ngFor="let size of fontSizes"
-                [class.active]="size === selectedSize"
-                (click)="setFontSize(size)">
-          {{ size }}
-        </button>
-      </div>
-    </div>
-
+<div id="pf-dropdown" class="border-round hover:surface-100 relative">
+<!--TODO cursor-pointer przestał działać wszędzie-->
+  <div  id="pf-dropdown-button" class="flex align-items-center px-3 py-2 text-900 cursor-pointer">
+      <span id="pf-dropdown-button-icon">
+        <i class="bi bi-fonts mr-2"></i>
+      </span>
+    <span>Typography</span>
+    <app-svg-icon id="pf-dropdown-button-caret-down" class="p-icon p-submenu-icon ml-2" [path]="'assets/icons/caret-down.svg'"></app-svg-icon>
   </div>
+
+  <div id="pf-dropdown-content" class="absolute shadow-2 min-w-max py-2 border-1 border-round border-100">
+    <div class="px-2">
+
+      <div class="pb-2">
+        <label class="block pb-2">Font</label>
+
+        <!--TODO trzeba ostylować ten dropdown - resajzuje całe menu i robi się bałagan na widoku-->
+        <p-dropdown
+          [options]="fonts"
+          [ngModel]="selectedFont"
+          placeholder="Select font"
+          (change)="setFont($event)"
+          scrollHeight="600px"
+        />
+      </div>
+
+      <div>
+        <label class="block pb-2">Size</label>
+        <p-buttonGroup>
+<!--        TODO lepiej ostylować te buttony: https://stackoverflow.com/questions/51713051/primeng-button-not-stylizing
+             a jeszcze lepiej zmienić na multiple selecta: https://primeng.org/selectbutton#multiple-->
+
+          <p-button *ngFor="let size of fontSizes" [class.active]="size === selectedSize" (click)="setFontSize(size)"
+                    [outlined]="true">
+            {{ size }}
+          </p-button>
+        </p-buttonGroup>
+      </div>
+
+    </div>
+  </div>
+
 </div>
