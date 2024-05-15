@@ -1,3 +1,30 @@
+<div id="pf-dropdown" class="border-round hover:surface-100 relative">
+  <div  id="pf-dropdown-button" class="flex align-items-center px-3 py-2 text-900 cursor-pointer">
+      <span id="pf-dropdown-button-icon">
+        <i class="bi bi-toggles mr-2"></i>
+      </span>
+    <span>Sections</span>
+    <app-svg-icon id="pf-dropdown-button-caret-down" class="p-icon p-submenu-icon ml-2" [path]="'assets/icons/caret-down.svg'"></app-svg-icon>
+  </div>
+
+  <div id="pf-dropdown-content" class="absolute shadow-2 min-w-max py-2 border-1 border-round border-100">
+    <div class="px-2">
+      <div class="pb-2">
+        <label class="block pb-2">Personal details</label>
+<!--        todo przenieś tutaj z dołu-->
+      </div>
+
+      <div>
+        <label class="block pb-2">Size</label>
+      </div>
+<!--        todo przenieś tutaj z dołu-->
+    </div>
+  </div>
+
+</div>
+
+<!------------------------------------------------>
+
 <div class="dropdown">
   <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
     <span>
