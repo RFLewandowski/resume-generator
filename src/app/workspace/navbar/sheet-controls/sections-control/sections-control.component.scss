@@ -1,6 +1,5 @@
-.dropdown-menu {
-  padding-left: 15px; // hacks to fit two inputs and button
-  padding-right: 15px;
+#pf-dropdown-content {
+  display: block; // FIXME remove me after all is ready
 }
 
 .columns,
@@ -10,27 +9,4 @@
 
 .column {
   flex: 1;
-}
-
-.form-check-label {
-  white-space: nowrap;
-}
-
-.mb-2px {
-  margin-bottom: 2px !important;
-}
-
-.form-switch {
-  .form-check-input:focus {
-    border-color: rgba(0, 0, 0, 0.25);
-    outline: 0;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
-  }
-
-  .form-check-input:checked {
-    background-color: var(--bs-secondary);
-    border: none;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
-  }
 }

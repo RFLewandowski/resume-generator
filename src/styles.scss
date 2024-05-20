@@ -40,7 +40,24 @@ body {
 
 
 
+.small-input-switch {
 
+  .p-inputswitch {
+    height: 1.2rem;
+    width: 2.4rem;
+    &.p-inputswitch-checked {
+      .p-inputswitch-slider::before {
+        transform: translateX(1rem);
+      }
+    }
+
+    .p-inputswitch-slider::before {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin-top: -0.45rem;
+    }
+  }
+}
 
 //.dropdown-item {
 //  cursor: pointer;

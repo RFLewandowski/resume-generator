@@ -3,13 +3,15 @@ import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/
 import {CustomSectionItem, Placement, SectionType} from "./custom-section-item";
 import {NgIf} from "@angular/common";
 import {SheetStateService} from "../../../../../services/sheet-state.service";
+import {DividerModule} from "primeng/divider";
 
 @Component({
   selector: 'app-custom-section-selector',
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    NgIf
+    NgIf,
+    DividerModule
   ],
   templateUrl: './custom-section-selector.component.html',
   styleUrl: './custom-section-selector.component.scss'

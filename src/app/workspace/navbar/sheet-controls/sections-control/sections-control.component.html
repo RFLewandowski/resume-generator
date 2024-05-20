@@ -9,56 +9,33 @@
 
   <div id="pf-dropdown-content" class="absolute shadow-2 min-w-max py-2 border-1 border-round border-100">
     <div class="px-2">
-      <div class="pb-2">
-        <label class="block pb-2">Personal details</label>
-<!--        todo przenieś tutaj z dołu-->
+      <div class="columns">
+
+        <div id="column1">
+          <label class="flex align-items-center p-1 pr-3">Personal details</label>
+          <div *ngFor="let item of sheetStateService.SectionItemsColumn1">
+            <div class="flex align-items-center p-1 pr-3">
+              <p-inputSwitch class="small-input-switch pr-2"
+                inputId="{{ item.label }}" [ngModel]="item.state" (onChange)="logToggleSectionItem(item)"/>
+              <label class="cursor-pointer" for="{{ item.label }}">{{ item.label }}</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="column2">
+          <div *ngFor="let item of sheetStateService.SectionItemsColumn2">
+            <div class="flex align-items-center p-1">
+              <p-inputSwitch class="small-input-switch pr-2"
+                inputId="{{ item.label }}" [ngModel]="item.state" (onChange)="logToggleSectionItem(item)"/>
+              <label class="cursor-pointer" for="{{ item.label }}">{{ item.label }}</label>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div>
-        <label class="block pb-2">Size</label>
-      </div>
-<!--        todo przenieś tutaj z dołu-->
+<!--        <app-custom-section-selector></app-custom-section-selector> TODO uncomment me-->
     </div>
   </div>
 
-</div>
-
-<!------------------------------------------------>
-
-<div class="dropdown">
-  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-    <span>
-      <i class="bi bi-toggles"></i>
-    </span>
-    Sections
-  </button>
-  <div class="dropdown-menu">
-    <div class="columns">
-      <div id="column1">
-        <label class="form-label mb-2px">Personal details</label>
-        <div *ngFor="let item of sheetStateService.SectionItemsColumn1">
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="{{ item.label }}"
-                   [checked]="item.state" (change)="toggleSectionItem(item)">
-            <label class="form-check-label" for="{{ item.label }}">{{ item.label }}</label>
-          </div>
-        </div>
-      </div>
-
-      <div id="column2">
-        <div *ngFor="let item of sheetStateService.SectionItemsColumn2">
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="{{ item.label }}"
-                   [checked]="item.state" (change)="toggleSectionItem(item)">
-            <label class="form-check-label" for="{{ item.label }}">{{ item.label }}</label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="dropdown-divider"></div>
-
-    <app-custom-section-selector></app-custom-section-selector>
-
-  </div>
 </div>

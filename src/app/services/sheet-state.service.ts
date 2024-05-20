@@ -58,7 +58,7 @@ export class SheetStateService {
     console.log(`new font = ${this.fontSize}`)
   }
 
-  toggleSectionItem(item: SectionItem) {
+  logToggleSectionItem(item: SectionItem) {
     item.state = !item.state;
     const column = this.SectionItemsColumn1.includes(item)
       ? this.SectionItemsColumn1
