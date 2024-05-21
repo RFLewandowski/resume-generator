@@ -21,10 +21,6 @@ body {
   color: var(--surface-800);
 }
 
-#pf-dropdown-content {
-  display: none;
-}
-
 .nowrap {
   white-space: nowrap;
 }
@@ -32,13 +28,6 @@ body {
 #pf-dropdown, #pf-dropdown-content {
   background-color: var(--surface-0);
 }
-
-#pf-dropdown-button:hover + #pf-dropdown-content,
-#pf-dropdown-content:hover {
-  display: block;
-}
-
-
 
 .small-input-switch {
 

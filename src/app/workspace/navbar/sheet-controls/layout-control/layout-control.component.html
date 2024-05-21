@@ -1,12 +1,13 @@
 <div id="pf-dropdown" class="border-round hover:surface-100 relative">
-  <div  id="pf-dropdown-button" class="flex align-items-center px-3 py-2 text-900 cursor-pointer">
+  <div  id="pf-dropdown-button" class="flex align-items-center px-3 py-2 text-900 cursor-pointer"
+        pStyleClass="@next" enterFromClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
       <span id="pf-dropdown-button-icon">
         <i class="bi bi-layout-text-window-reverse mr-2"></i>
       </span>
-    <span>Dropdown</span>
+    <span>Layout</span>
     <app-svg-icon id="pf-dropdown-button-caret-down" class="p-icon p-submenu-icon ml-2" [path]="'assets/icons/caret-down.svg'"></app-svg-icon>
   </div>
-  <div id="pf-dropdown-content" class="absolute shadow-2 min-w-full py-2 border-1 border-round border-100">
+  <div id="pf-dropdown-content" class="hidden absolute shadow-2 min-w-full py-2 border-1 border-round border-100">
     <ul class="list-none p-0 m-0">
       <li id="pf-dropdown-option" *ngFor="let layout of layouts">
         <a class="block min-w-max py-2 px-3 no-underline text-900 hover:surface-100 transition-all transition-duration-100 cursor-pointer"

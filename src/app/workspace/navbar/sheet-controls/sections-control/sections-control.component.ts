@@ -6,17 +6,19 @@ import {CustomSectionSelectorComponent} from "./custom-section-selector/custom-s
 import {SvgIconComponent} from "../../../../svg-icon/svg-icon.component";
 import {InputSwitchModule} from "primeng/inputswitch";
 import {FormsModule} from "@angular/forms";
+import {StyleClassModule} from "primeng/styleclass";
 
 @Component({
   selector: 'app-sections-control',
   standalone: true,
-  imports: [
-    NgForOf,
-    CustomSectionSelectorComponent,
-    SvgIconComponent,
-    InputSwitchModule,
-    FormsModule,
-  ],
+    imports: [
+        NgForOf,
+        CustomSectionSelectorComponent,
+        SvgIconComponent,
+        InputSwitchModule,
+        FormsModule,
+        StyleClassModule,
+    ],
   templateUrl: './sections-control.component.html',
   styleUrl: './sections-control.component.scss'
 })
