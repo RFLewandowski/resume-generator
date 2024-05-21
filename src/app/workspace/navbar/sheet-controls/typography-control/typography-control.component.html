@@ -14,7 +14,6 @@
       <div class="pb-2">
         <label class="block pb-2">Font</label>
 
-        <!--TODO trzeba ostylować ten dropdown - resajzuje całe menu i robi się bałagan na widoku-->
         <p-dropdown
           [options]="fonts"
           [ngModel]="selectedFont"
@@ -27,15 +26,11 @@
 
       <div>
         <label class="block pb-2">Size</label>
-        <p-buttonGroup>
-<!--        TODO lepiej ostylować te buttony: https://stackoverflow.com/questions/51713051/primeng-button-not-stylizing
-             a jeszcze lepiej zmienić na multiple selecta: https://primeng.org/selectbutton#multiple-->
-
-          <p-button *ngFor="let size of fontSizes" [class.active]="size === selectedSize" (click)="setFontSize(size)"
-                    [outlined]="true">
-            {{ size }}
-          </p-button>
-        </p-buttonGroup>
+        <p-selectButton
+          [options]="fontSizes"
+          [ngModel]="selectedSize"
+          (onChange)="setFontSize($event)"
+        />
       </div>
 
     </div>

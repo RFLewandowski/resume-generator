@@ -5,10 +5,9 @@ import {SheetStateService} from "../../../../services/sheet-state.service";
 import {FontSize} from "./font-size";
 import {LayoutIcons} from "../layout-control/layout";
 import {SvgIconComponent} from "../../../../svg-icon/svg-icon.component";
-import {ButtonGroupModule} from "primeng/buttongroup";
-import {ButtonModule} from "primeng/button";
 import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
+import {SelectButtonModule} from "primeng/selectbutton";
 
 @Component({
   selector: 'app-typography-control',
@@ -16,10 +15,9 @@ import {FormsModule} from "@angular/forms";
   imports: [
     NgForOf,
     SvgIconComponent,
-    ButtonGroupModule,
-    ButtonModule,
     DropdownModule,
-    FormsModule
+    FormsModule,
+    SelectButtonModule
   ],
   templateUrl: './typography-control.component.html',
   styleUrl: './typography-control.component.scss'
@@ -42,7 +40,8 @@ export class TypographyControlComponent {
     this.selectedFont = this.sheetStateService.font
   }
 
-  setFontSize(fontSize: FontSize) {
+  setFontSize(event: any) {
+    const fontSize: FontSize = event.value
     this.sheetStateService.setFontSize(fontSize);
     this.selectedSize = this.sheetStateService.fontSize;
   }
