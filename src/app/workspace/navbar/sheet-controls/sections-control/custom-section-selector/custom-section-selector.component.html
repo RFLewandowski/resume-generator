@@ -8,12 +8,15 @@
       <div class="select-wrapper mr-1">
         <p-dropdown formControlName="type"
           [options]="sectionType"
+          [style]="{'width':'10rem'}"
           placeholder="Select Type" />
       </div>
       <div class="select-wrapper">
         <p-dropdown formControlName="placement"
-                    [options]="placement"
+          [options]="placement"
+          [style]="{'width':'11rem'}"
           placeholder="Select Placement" />
+          <!-- TODO placement is based on layout and need to be updated, after that width of dropdown in style-->
       </div>
       <div class="button-wrapper ml-2">
         <p-button type="submit" icon="bi bi-plus-circle"/>
