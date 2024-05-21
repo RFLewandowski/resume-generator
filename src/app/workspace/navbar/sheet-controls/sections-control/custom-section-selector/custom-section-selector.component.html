@@ -1,37 +1,26 @@
-<!-- TODO check if below do not works better ?-->
-<!--<p-divider align="left" type="solid">-->
-<!--  Add custom section-->
-<!--</p-divider>-->
+<p-divider/>
 
-<label class="form-label">Add custom section</label>
+<label class="flex align-items-center pb-3">Add custom section</label>
+
 <div class="custom-sections">
   <form [formGroup]="customSectionForm" (ngSubmit)="addCustomSection()">
     <div class="row selects-container">
-      <div class="select-wrapper">
-        <select class="form-select form-select-sm" formControlName="type">
-          <option value="" disabled selected>Select Type</option>
-          <option [value]="sectionType.TextSection">{{ sectionType.TextSection }}</option>
-          <option [value]="sectionType.ListSection">{{ sectionType.ListSection }}</option>
-        </select>
+      <div class="select-wrapper mr-1">
+        <p-dropdown formControlName="type"
+          [options]="sectionType"
+          placeholder="Select Type" />
       </div>
       <div class="select-wrapper">
-        <select class="form-select form-select-sm" formControlName="placement">
-          <option value="" disabled selected>Select Placement</option>
-          <!--       TODO needs to be translated based on layout-->
-          <option [value]="placement.Primary">{{ placement.Primary }}</option>
-          <option [value]="placement.Secondary">{{ placement.Secondary }}</option>
-        </select>
+        <p-dropdown formControlName="placement"
+                    [options]="placement"
+          placeholder="Select Placement" />
       </div>
-      <div class="button-wrapper">
-        <button type="submit" class="btn btn-secondary btn-sm">
-          <i class="bi bi-plus-square"></i>
-        </button>
+      <div class="button-wrapper ml-2">
+        <p-button type="submit" icon="bi bi-plus-circle"/>
       </div>
     </div>
-    <!--   TODO trzeba popatrzeć co zamyka, a co nie menusy-->
-    <!--    FIXME plus zawsze zamyka, a jak jest error to nie powinien-->
-    <div *ngIf="showError" class="alert alert-danger mt-3">
-      Please select 'Type' and 'Placement' for your custom resume section.
+    <div *ngIf="showError" class="text-red-400 pl-1">
+      Please select 'Type' and 'Placement'<br> for your custom resume section.
     </div>
   </form>
 </div>

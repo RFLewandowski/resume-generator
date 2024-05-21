@@ -4,6 +4,8 @@ import {CustomSectionItem, Placement, SectionType} from "./custom-section-item";
 import {NgIf} from "@angular/common";
 import {SheetStateService} from "../../../../../services/sheet-state.service";
 import {DividerModule} from "primeng/divider";
+import {DropdownModule} from "primeng/dropdown";
+import {ButtonModule} from "primeng/button";
 
 @Component({
   selector: 'app-custom-section-selector',
@@ -11,14 +13,17 @@ import {DividerModule} from "primeng/divider";
   imports: [
     ReactiveFormsModule,
     NgIf,
-    DividerModule
+    DividerModule,
+    DropdownModule,
+    ButtonModule
   ],
   templateUrl: './custom-section-selector.component.html',
   styleUrl: './custom-section-selector.component.scss'
 })
 export class CustomSectionSelectorComponent implements OnInit {
-  sectionType = SectionType;
-  placement = Placement;
+  sectionType = Object.values(SectionType);
+  placement = Object.values(Placement);
+
   customSectionForm!: FormGroup;
   showError: boolean = false;
 
