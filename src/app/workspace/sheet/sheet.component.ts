@@ -1,9 +1,12 @@
 import {Component} from '@angular/core';
+import {ResumeComponent} from "./resume/resume.component";
 
 @Component({
   selector: 'app-sheet',
   standalone: true,
-  imports: [],
+  imports: [
+    ResumeComponent
+  ],
   templateUrl: './sheet.component.html',
   styleUrl: './sheet.component.scss'
 })
