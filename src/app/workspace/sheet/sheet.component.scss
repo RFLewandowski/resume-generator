@@ -1,6 +1,7 @@
 .paper-sheet {
-  margin: calc(56px + 0.5rem) auto 60px; // TODO calc toolbar height when stops changing
-  width: 210mm;
-  height: 297mm;
+  margin: calc(56px + 0.5rem + 2.3rem) auto 60px; // TODO calc toolbar height when stops changing/ (height px + I_dont_know px + what is below px)
+  width: 85rem;
+  height: calc(83rem * 1.41429);
   background-color: white;
+  padding: 6rem;
 }

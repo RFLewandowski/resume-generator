@@ -17,7 +17,8 @@ export class WorkspaceComponent {
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
-    this.renderer.setStyle(document.body, 'background-color', '#caf1d8'); // TODO set this dynamically
+    this.renderer.setStyle(document.body, 'background-color', '#0082e6');// TODO set this dynamically
+    this.renderer.setStyle(document.body, 'background-image', 'linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2))'); // '#caf1d8' // TODO set this dynamically
   }
 
 }
