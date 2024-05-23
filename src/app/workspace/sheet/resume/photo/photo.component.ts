@@ -27,7 +27,7 @@ export class PhotoComponent {
   }
 
   resetInput(){
-    const input = document.getElementById('avatar-input-file') as HTMLInputElement;
+    const input = document.getElementById('photo-input-file') as HTMLInputElement;
     if(input){
       input.value = "";
     }
