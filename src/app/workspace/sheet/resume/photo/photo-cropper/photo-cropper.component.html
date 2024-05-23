@@ -1,0 +1,11 @@
+<div>
+  <img id="image" height="600" [src]="sanitizedUrl" alt="">
+  <div class="crop-actions">
+    <p-button class="mr-3" (onClick)="reset()">
+      Reset
+    </p-button>
+    <p-button (onClick)="crop()">
+      Ok
+    </p-button>
+  </div>
+</div>
