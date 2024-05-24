@@ -1,6 +1,5 @@
 <div class="photo-container">
   <div class="image-container" *ngIf="file; else placeholder"
-       [ngClass]="{'box-shadow-photo': !!file}"
        [ngStyle]="{backgroundImage: 'url(' + file + ')'}">
   </div>
 
@@ -16,8 +15,9 @@
     </div>
   </label>
 
-<!-- TODO dostosowanie dialogu do tego ze stronki: https://primeng.org/dialog - nagłówek itp -->
+<!-- LATER dodać walidację jak na siłę wrzucimy nieprawidłowy typ pliku -->
 <!-- TODO ładowanie na kliknięcie w cały obraz, a nie tylko w kóło -->
+<!-- TODO dostosowanie dialogu do tego ze stronki: https://primeng.org/dialog - nagłówek itp -->
 <!-- TODO zmiana cssów, żeby bardziej przypominały to co trzeba -->
 
 </div>
