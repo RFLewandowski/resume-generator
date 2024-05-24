@@ -28,9 +28,9 @@ export class PhotoComponent {
     const files = event.target.files as FileList;
 
     if (files.length > 0) {
-      const _file = URL.createObjectURL(files[0]);
+      const file = URL.createObjectURL(files[0]);
       this.resetInput();
-      this.openPhotoEditor(_file)
+      this.openPhotoEditor(file)
         .subscribe(
           (result) => {
             if (result) {
