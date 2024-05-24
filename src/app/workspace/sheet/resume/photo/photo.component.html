@@ -11,12 +11,15 @@
   <label for="photo-input-file">
     <div class="icon-wrapper">
       <input type="file" id="photo-input-file" accept="image/jpg, image/jpeg, image/png" (change)="onFileChange($event)" />
-<!--      <mat-icon class="icon" fontIcon="edit"></mat-icon>-->
+      <div id="photo-overlay-label" class="hidden" [ngClass]="{'upload-photo-label': !file}">
+        Upload Photo
+      </div>
     </div>
   </label>
 
 <!-- LATER dodać walidację jak na siłę wrzucimy nieprawidłowy typ pliku -->
-<!-- TODO ładowanie na kliknięcie w cały obraz, a nie tylko w kóło -->
+<!-- LATER można pokombinować jak to będzie wyglądało z ikonką -->
+<!--  LATER napis "Upload Photo" też na hover nad zdjęciem-->
 <!-- TODO dostosowanie dialogu do tego ze stronki: https://primeng.org/dialog - nagłówek itp -->
 <!-- TODO zmiana cssów, żeby bardziej przypominały to co trzeba -->
 

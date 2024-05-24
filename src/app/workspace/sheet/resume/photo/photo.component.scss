@@ -31,26 +31,21 @@
 
 .icon-wrapper {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 200px;
+  width: 200px;
   padding: .35rem;
-  background-color: #2962FF;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   right: 0;
-  top: 75%;
+  top: 0;
   z-index: 2;
   cursor: pointer;
 
   &:hover {
     transition: all .25s;
-    background-color: darken(#2962FF, 15%);
-  }
-
-  .icon {
-    color: white;
+    background: rgba(0, 0, 0, 0.5);
   }
 
   label {
@@ -63,5 +58,9 @@
   input[type='file'] {
     display: none;
   }
+}
+
+.upload-photo-label {
+  display: block !important;
 }
 
