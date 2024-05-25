@@ -43,12 +43,9 @@ export class PhotoComponent {
   }
 
   openPhotoEditor(image: string): Observable<any> {
-    const dialogRef = this.dialogService.open(PhotoCropperComponent, {
-      width: '80vw',
-      height: '80vh',
-      resizable: true,
-      data: image
-    });
+    const dialogRef = this.dialogService.open(
+      PhotoCropperComponent, {data: image}
+    );
 
     return dialogRef.onClose;
   }
