@@ -48,6 +48,10 @@
     background: rgba(0, 0, 0, 0.3);
   }
 
+  &:hover:before {
+    content: "Upload Photo";
+  }
+
   label {
     cursor: pointer;
     display: flex;
@@ -58,9 +62,5 @@
   input[type='file'] {
     display: none;
   }
-}
-
-.upload-photo-label {
-  display: block !important;
 }
 

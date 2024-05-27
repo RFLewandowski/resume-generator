@@ -11,15 +11,11 @@
   <label for="photo-input-file">
     <div class="icon-wrapper">
       <input type="file" id="photo-input-file" accept="image/jpg, image/jpeg, image/png" (change)="onFileChange($event)" />
-      <div id="photo-overlay-label" class="hidden" [ngClass]="{'upload-photo-label': !file}">
-        Upload Photo
-      </div>
     </div>
   </label>
 
 <!-- LATER dodać walidację jak na siłę wrzucimy nieprawidłowy typ pliku -->
 <!-- LATER można pokombinować jak to będzie wyglądało z ikonką -->
-<!--  LATER napis "Upload Photo" też na hover nad zdjęciem-->
 <!-- TODO zmiana cssów, żeby bardziej przypominały to co trzeba - skalowanie - konsultacja z frontendowcami -->
 
 </div>
