@@ -5,6 +5,7 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "primeflex/primeflex.css";
 
+//TODO Full HD (1920 x 1080), 2K (2560 x 1440), and 4K Ultra HD (3840 x 2160).
 @media screen and (min-width: 2000px) { // FIXME - jest dobry kierunek, ale trzeba jeszcze popracować nad tym skalowaniem
   html, body {
     font-size: 77%;

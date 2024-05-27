@@ -3,9 +3,9 @@
   width: fit-content;
 }
 
-.image-container { // fixme - it needs better scaling support, same with cropper
-  height: 200px;
-  width: 200px;
+.image-container {
+  height: 20rem;
+  width: 20rem;
   z-index: 1;
   border-radius: 50%;
   background-color: #fff;
@@ -31,8 +31,8 @@
 
 .icon-wrapper {
   position: absolute;
-  height: 200px;
-  width: 200px;
+  height: 20rem;
+  width: 20rem;
   padding: .35rem;
   border-radius: 50%;
   display: flex;
@@ -50,6 +50,7 @@
 
   &:hover:before {
     content: "Upload Photo";
+    font-size: 1rem;
   }
 
   label {
