@@ -3,7 +3,7 @@
   width: fit-content;
 }
 
-.image-container {
+.image-container { // fixme - it needs better scaling support, same with cropper
   height: 200px;
   width: 200px;
   z-index: 1;

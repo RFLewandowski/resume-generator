@@ -46,7 +46,6 @@ export class PhotoCropperComponent implements OnInit, AfterViewInit {
   }
 
   // make the crop box rounded
-
   getRoundedCanvas(sourceCanvas: any) {
     var canvas = document.createElement('canvas');
     var context: any = canvas.getContext('2d');
