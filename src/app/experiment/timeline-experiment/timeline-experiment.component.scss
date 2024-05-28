@@ -1,3 +1,5 @@
-* {
-  color: red;
+::ng-deep {
+  .p-timeline-event-opposite {
+    display: none;
+  }
 }

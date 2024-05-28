@@ -1,4 +1,20 @@
-<p>
-  https://primeng.org/timeline
-  https://stackblitz.com/run?file=src%2Fapp%2Ftimeline-template-demo.ts
-</p>
+<p-timeline [value]="events" align="left" styleClass="customized-timeline">
+  <ng-template pTemplate="marker" let-event>
+            <span
+              class="flex w-1rem h-1rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+              [style]="{ 'background-color': event.color }">
+            </span>
+  </ng-template>
+  <ng-template pTemplate="content" let-event>
+    <!--      zamiast karty można też użyć: https://primeng.org/panel-->
+    <!-- ale najlepiej zrobić swój element, bo tu i tak będzie mnóstwo customizacji :)   -->
+    <p-card [header]="event.status" contentEditable="true" [subheader]="event.date">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
+        neque quas!
+      </p>
+    </p-card>
+  </ng-template>
+</p-timeline>
+
