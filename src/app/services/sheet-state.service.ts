@@ -1,12 +1,13 @@
 import {Injectable} from '@angular/core';
 import {Layout} from "../workspace/navbar/sheet-controls/layout-control/layout";
-import {Color} from "../workspace/navbar/sheet-controls/color-control/color";
+import {Color, DefaultColor} from "../workspace/navbar/sheet-controls/color-control/color";
 import {Font} from "../workspace/navbar/sheet-controls/typography-control/font";
 import {FontSize} from "../workspace/navbar/sheet-controls/typography-control/font-size";
 import {SectionItem} from "../workspace/navbar/sheet-controls/sections-control/section-item";
 import {
   CustomSectionItem
 } from "../workspace/navbar/sheet-controls/sections-control/custom-section-selector/custom-section-item";
+import {BehaviorSubject, Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,10 @@ import {
 export class SheetStateService {
 
   layout: Layout = Layout.Split;
-  color: any = Color.AzureBlue;
+
+  private colorSource: BehaviorSubject<any> = new BehaviorSubject<any>(DefaultColor);
+  currentColor: Observable<any> = this.colorSource.asObservable();
+
   font: Font = Font.Nunito;
   fontSize: FontSize = FontSize.Medium;
   SectionItemsColumn1: SectionItem[] = [
@@ -44,8 +48,8 @@ export class SheetStateService {
   }
 
   setColor(color: any) {
-    this.color = color;
-    console.log(`new color = ${this.color}`)
+    this.colorSource.next(color)
+    console.log(`new color = ${this.colorSource.value}`)
   }
 
   setFont(font: Font) {

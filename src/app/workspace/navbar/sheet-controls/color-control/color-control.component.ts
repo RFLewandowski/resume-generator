@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NgClass, NgForOf} from "@angular/common";
 import {SheetStateService} from "../../../../services/sheet-state.service";
-import {Color, ShadeOfGray} from "./color";
+import {Color, DefaultColor, ShadeOfGray} from "./color";
 import {FormsModule} from "@angular/forms";
 import {SvgIconComponent} from "../../../../svg-icon/svg-icon.component";
 import {ColorPickerModule} from "primeng/colorpicker";
@@ -23,7 +23,7 @@ import {StyleClassModule} from "primeng/styleclass";
 })
 export class ColorControlComponent {
 
-  selectedColor: string = this.sheetStateService.color
+  selectedColor: string = DefaultColor;
 
   protected readonly defaultPickerColor = ShadeOfGray;
 
@@ -46,10 +46,6 @@ export class ColorControlComponent {
     const color = event.value;
     this.sheetStateService.setColor(color);
     this.selectedColor = color;
-  }
-
-  getSafeColor(myColorfield: any) {
-
   }
 
   isSelectedFromPicker(): boolean {
