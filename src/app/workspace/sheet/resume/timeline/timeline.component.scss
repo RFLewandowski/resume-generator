@@ -1,0 +1,9 @@
+::ng-deep {
+  .p-timeline-event-opposite {
+    display: none;
+  }
+
+  .p-timeline-event-connector {
+    background-color: #e2e8f0; // color from light theme
+  }
+}

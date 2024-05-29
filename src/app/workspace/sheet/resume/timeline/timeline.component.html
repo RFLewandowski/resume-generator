@@ -1,1 +1,11 @@
-<p>timeline works!</p>
+<p-timeline [value]="sheetContentService.experienceEntries" align="left" styleClass="customized-timeline">
+  <ng-template pTemplate="marker" let-event>
+            <span
+              class="flex w-1rem h-1rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+              [style]="{ 'background-color': color }">
+            </span>
+  </ng-template>
+  <ng-template pTemplate="content" let-event>
+    <app-timeline-entry [timelineEntry]="event"></app-timeline-entry>
+  </ng-template>
+</p-timeline>
