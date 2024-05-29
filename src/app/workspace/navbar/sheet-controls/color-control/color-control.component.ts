@@ -30,7 +30,6 @@ export class ColorControlComponent {
   constructor(private sheetStateService: SheetStateService) {
   }
 
-  // TODO ustaw active opdowiedni kolor tak jak w fontach
   get colors(): Color[] {
     return Object.values(Color);
   }
@@ -42,7 +41,6 @@ export class ColorControlComponent {
   }
 
   setColorFromPicker(event: any): void {
-    // console.log(event)
     const color = event.value;
     this.sheetStateService.setColor(color);
     this.selectedColor = color;
