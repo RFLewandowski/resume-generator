@@ -5,6 +5,12 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "primeflex/primeflex.css";
 
+body {
+  background-attachment: fixed;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+}
+
+
 [contenteditable] {
   outline: 0 solid transparent;
 }

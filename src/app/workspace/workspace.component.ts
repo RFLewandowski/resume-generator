@@ -19,14 +19,11 @@ export class WorkspaceComponent {
   }
 
   ngOnInit(): void {
-    this.renderer.setStyle(document.body, 'background-image', 'linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15))'); // TODO lepszy byłby
-
     this.sheetStateService.currentColor.subscribe(
-      color => {
-        this.renderer.setStyle(document.body, 'background-color', color)
-      }
+      color => this.renderer.setStyle(
+        document.body, 'background-color', color
+      )
     );
-
   }
 
 }
