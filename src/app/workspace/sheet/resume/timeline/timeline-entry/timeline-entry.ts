@@ -1,6 +1,6 @@
 export interface TimelineEntry {
+  institution?: string;
   title?: string;
-  subtitle?: string;
   dateRange?: string;
   description?: string;
 }

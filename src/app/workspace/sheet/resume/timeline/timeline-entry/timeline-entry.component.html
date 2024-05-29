@@ -1,10 +1,11 @@
-<!-- border-solid border-white border-dashed hover:border-500-->
+<!-- TODO onFocusOut można odpalać, moze samo zaktualizowanie tego obiekciku bedzie spropagowane - bo mamy handle - tylko czy to się da zrobić - najlepiej subskrybcja na całość -->
 <div class="text-100 pb-2 hover:bg-primary-500 border-round-sm px-2">
-  <h4 contentEditable="true" class="mt-0 hover:bg-primary-600 border-round-sm" [style]="{ 'color': color }"> <!--  -->
-    {{ timelineEntry.title }}
+  <h4 contentEditable="true" class="mt-0 hover:bg-primary-600 border-round-sm"
+      [style]="{ 'color': color }" >
+    {{ timelineEntry.institution }}
   </h4>
   <h3 class="hover:bg-primary-600 border-round-sm" contentEditable="true">
-    {{ timelineEntry.subtitle }}
+    {{ timelineEntry.title }}
   </h3>
   <b class="hover:bg-primary-600 border-round-sm" contentEditable="true">
     {{ timelineEntry.dateRange }}

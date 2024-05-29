@@ -9,14 +9,14 @@ export class SheetContentService {
 
   experienceEntries: TimelineEntry[] = [
     {
-      title: 'Majster',
-      subtitle: 'Pomocnik u Mastra',
+      institution: 'Majster',
+      title: 'Pomocnik u Mastra',
       dateRange: "od 1 do 31 I 2021",
       description: "głównie zamiatałem, ale też trochę wierciłem"
     },
     {
-      title: 'Klub "Niebieska Ostryga"',
-      subtitle: 'Bramkarz',
+      institution: 'Klub "Niebieska Ostryga"',
+      title: 'Bramkarz',
       dateRange: "od 1 do 31 II 2022",
       description: "wyjebywałem na zbity pysk"
     }
