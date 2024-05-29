@@ -1,9 +1,15 @@
 <!-- border-solid border-white border-dashed hover:border-500-->
-<div class="text-100 pb-2 hover:bg-primary-600 border-round-sm hover-container">
-  <h4 contentEditable="true" class="mt-0 hover-background" [style]="{ 'color': color }"> <!--  -->
+<div class="text-100 pb-2 hover:bg-primary-500 border-round-sm">
+  <h4 contentEditable="true" class="mt-0 hover:bg-primary-600 border-round-sm" [style]="{ 'color': color }"> <!--  -->
     {{ timelineEntry.title }}
   </h4>
-  <h3 contentEditable="true">{{ timelineEntry.subtitle }}</h3>
-  <b contentEditable="true">{{ timelineEntry.dateRange }}</b>
-  <p contentEditable="true">{{ timelineEntry.description }}</p>
+  <h3 class="hover:bg-primary-600 border-round-sm" contentEditable="true">
+    {{ timelineEntry.subtitle }}
+  </h3>
+  <b class="hover:bg-primary-600 border-round-sm" contentEditable="true">
+    {{ timelineEntry.dateRange }}
+  </b>
+  <p  class="hover:bg-primary-600 border-round-sm" contentEditable="true">
+    {{ timelineEntry.description }}
+  </p>
 </div>
