@@ -2,7 +2,8 @@
     - nie można tego ustawic paddingami, ani takimi innymi bo linia nie dochodzi do kropek -  jak będzie czas mozna zmienić -->
 
 <!--TODO handling - change order - first -->
-<p-timeline [value]="sheetContentService.experienceEntries" align="left" styleClass="customized-timeline">
+<p-timeline [value]="sheetContentService.experienceEntries"
+            align="left">
   <ng-template pTemplate="marker" let-event>
             <span
               class="flex size-of-h4 align-items-center justify-content-center border-circle z-1 shadow-1"
