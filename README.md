@@ -11,6 +11,5 @@ Kliknąć w [link](https://RFLewandowski.github.io/resume-generator) i wypełni�
 Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
-Empty for now.
-
-....................
+**Dlaczego jeszcze nic nie działa?** \
+Bo jestem leniwą bułą i nie skończyłem XD
