@@ -12,4 +12,4 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 
 ### FAQ:
 **Dlaczego jeszcze nic nie działa?** \
-Bo jestem leniwą bułą i nie skończyłem XD
+Bo jestem leniwą bułą i nie skończyłem XDD
