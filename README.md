@@ -15,3 +15,4 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 Bo jestem leniwą bułą i nie skończyłem XDD
 
 ![Alt text](./readme-what.jpg?raw=true "???")
+
