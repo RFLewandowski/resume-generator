@@ -14,5 +14,5 @@ Wszystko jest opisane w [README-angular.md](README-angular.md)
 **Dlaczego jeszcze nic nie działa?** \
 Bo jestem leniwą bułą i nie skończyłem XDD
 
-![Alt text](./readme-what.jpg?raw=true "???")
+![Alt text](./readme-meme.jpg?raw=true "???")
 
